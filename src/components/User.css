@@ -1,0 +1,20 @@
+.main-buttons{
+    margin-bottom: 20px;
+}
+.main-buttons button{
+    width: 80px;
+}
+.escoger{
+    display: flex;
+    flex-direction: row;
+}
+.escoger input{
+    margin-right: 10px;
+}
+.escoger .label-escoger{
+    margin-right: 10px;
+}
+.noVisible{
+    opacity: 0;
+    pointer-events: none;
+}

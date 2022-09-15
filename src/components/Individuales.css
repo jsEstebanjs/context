@@ -1,0 +1,9 @@
+.container-individuales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-individuales ul{
+    list-style: none;
+}

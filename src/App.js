@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Bts from './components/User';
+import { AuthProvider } from './store/AuthContext';
+import TotalVotos from './components/TotalVotos';
+import Individuales from './components/Individuales';
+import Filtro
+ from './components/Filtro';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Oprima para votar a su elección</h1>
+      <AuthProvider>
+        <Bts />
+        <TotalVotos />
+        <Individuales />
+        <Filtro />
+      </AuthProvider>
     </div>
   );
 }
